@@ -1,10 +1,13 @@
-import Image from "next/image";
-import Page1 from "./ui/context/page1/page";
+// app/page.tsx
+"use client";
 
-export default function Home() {
+import Link from "next/link";
+
+export default function HomePage() {
   return (
     <div>
-      <Page1 />
+      <h1>Welcome to the Multi-Page Form App</h1>
+      <Link href="/ui">Start the Form</Link>
     </div>
   );
 }
